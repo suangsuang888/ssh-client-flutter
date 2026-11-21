@@ -1,0 +1,6 @@
+include: package:flutter_lints/flutter.yaml
+
+linter:
+  rules:
+    # Keep the sample project lint-friendly but not noisy.
+    avoid_print: false

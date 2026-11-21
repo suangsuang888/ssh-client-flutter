@@ -1,0 +1,34 @@
+name: ssh_client
+description: A cross-platform SSH client with terminal, SFTP file browser and WebDAV backup.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+  flutter: '>=3.19.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  # SSH / SFTP client (pure Dart)
+  dartssh2: ^2.22.0
+  # Terminal emulator widget
+  xterm: ^4.0.0
+  # WebDAV client for backup / restore
+  webdav_client: ^1.2.2
+  # Local persistence for connection profiles & settings
+  shared_preferences: ^2.3.2
+  # Pick local files for upload / private key import
+  file_picker: ^8.1.2
+  # App document / download directories
+  path_provider: ^2.1.4
+  # Path manipulation
+  path: ^1.9.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
